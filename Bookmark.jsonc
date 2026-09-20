@@ -1,0 +1,30 @@
+{
+  "name": "Bookmark",
+  "type": "object",
+  "properties": {
+    "investigation_id": {
+      "type": "string"
+    },
+    "item_type": {
+      "type": "string",
+      "enum": [
+        "profile",
+        "evidence",
+        "conflict",
+        "node",
+        "alias"
+      ]
+    },
+    "label": {
+      "type": "string"
+    },
+    "item_data": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "required": [
+    "item_type",
+    "label"
+  ]
+}
