@@ -1,0 +1,28 @@
+{
+  "name": "Investigation",
+  "type": "object",
+  "properties": {
+    "subject_name": {
+      "type": "string"
+    },
+    "input": {
+      "type": "object",
+      "properties": {}
+    },
+    "result": {
+      "type": "object",
+      "properties": {}
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "live",
+        "demo"
+      ],
+      "default": "live"
+    }
+  },
+  "required": [
+    "subject_name"
+  ]
+}
